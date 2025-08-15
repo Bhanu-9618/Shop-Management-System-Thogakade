@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerManagementController">
+   <children>
+      <Label layoutX="144.0" layoutY="14.0" text="Customer Management">
+         <font>
+            <Font name="Courier New Bold" size="38.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblcustmanagement" layoutX="16.0" layoutY="78.0" prefHeight="200.0" prefWidth="729.0">
+        <columns>
+          <TableColumn fx:id="colcustid" prefWidth="60.0" text="CustID" />
+          <TableColumn fx:id="coltitle" prefWidth="60.0" text="Title" />
+            <TableColumn fx:id="colname" prefWidth="90.0" text="Name" />
+            <TableColumn fx:id="coldob" prefWidth="90.0" text="DOB" />
+            <TableColumn fx:id="colsalary" text="Salary" />
+            <TableColumn fx:id="coladdress" prefWidth="100.0" text="Address" />
+            <TableColumn fx:id="colcity" prefWidth="90.0" text="City" />
+            <TableColumn fx:id="colprovince" prefWidth="85.0" text="Province" />
+            <TableColumn fx:id="colpostalcode" prefWidth="75.0" text="Postalcode" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnAddCust" layoutX="57.0" layoutY="307.0" onAction="#btnAddCustOnAction" prefHeight="50.0" prefWidth="139.0" text="ADD">
+         <font>
+            <Font name="Courier New Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdateCust" layoutX="230.0" layoutY="307.0" onAction="#btnUpdateCustOnAction" prefHeight="50.0" prefWidth="139.0" text="UPDATE">
+         <font>
+            <Font name="Courier New Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDeleteCust" layoutX="394.0" layoutY="307.0" onAction="#btnDeleteCustOnAction" prefHeight="50.0" prefWidth="139.0" text="DELETE">
+         <font>
+            <Font name="Courier New Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnViewCust" layoutX="565.0" layoutY="307.0" onAction="#btnViewCustOnAction" prefHeight="50.0" prefWidth="139.0" text="VIEW">
+         <font>
+            <Font name="Courier New Bold" size="27.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

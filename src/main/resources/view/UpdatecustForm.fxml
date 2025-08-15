@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="477.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdatecustFormController">
+   <children>
+      <Label layoutX="185.0" layoutY="6.0" prefHeight="39.0" prefWidth="231.0" text="Update Customer">
+         <font>
+            <Font name="Courier New Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="67.0" prefHeight="39.0" prefWidth="307.0" text="Input CustID you want to update">
+         <font>
+            <Font name="Courier New Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtupdatecustid" layoutX="395.0" layoutY="69.0" prefHeight="35.0" prefWidth="125.0" />
+      <Label layoutX="43.0" layoutY="146.0" text="New CustId">
+         <font>
+            <Font name="Courier New Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtnewcustid" layoutX="156.0" layoutY="138.0" prefHeight="35.0" prefWidth="119.0" />
+      <Label layoutX="43.0" layoutY="201.0" text="New Title">
+         <font>
+            <Font name="Courier New Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="newcombotitle" layoutX="156.0" layoutY="199.0" prefHeight="25.0" prefWidth="119.0" />
+      <Label layoutX="43.0" layoutY="252.0" text="New Name">
+         <font>
+            <Font name="Courier New Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtnewname" layoutX="156.0" layoutY="244.0" prefHeight="35.0" prefWidth="119.0" />
+      <Label layoutX="43.0" layoutY="304.0" text="New DOB">
+         <font>
+            <Font name="Courier New Bold" size="17.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="newdatedob" layoutX="156.0" layoutY="301.0" prefHeight="25.0" prefWidth="119.0" />
+      <Label layoutX="43.0" layoutY="352.0" text="New Salary">
+         <font>
+            <Font name="Courier New Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtnewsalary" layoutX="156.0" layoutY="344.0" prefHeight="35.0" prefWidth="119.0" />
+      <Label layoutX="309.0" layoutY="146.0" text="New Address">
+         <font>
+            <Font name="Courier New Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtnewaddress" layoutX="432.0" layoutY="138.0" prefHeight="35.0" prefWidth="119.0" />
+      <Label layoutX="309.0" layoutY="201.0" text="New City">
+         <font>
+            <Font name="Courier New Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtnewcity" layoutX="432.0" layoutY="193.0" prefHeight="35.0" prefWidth="119.0" />
+      <Label layoutX="309.0" layoutY="252.0" text="New Province">
+         <font>
+            <Font name="Courier New Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="newcomboprovince" layoutX="432.0" layoutY="250.0" prefHeight="25.0" prefWidth="119.0" />
+      <JFXTextArea fx:id="txtnewpostalcode" layoutX="432.0" layoutY="296.0" prefHeight="35.0" prefWidth="119.0" />
+      <Label layoutX="309.0" layoutY="301.0" prefHeight="25.0" prefWidth="103.0" text="New Postal">
+         <font>
+            <Font name="Courier New Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnupdatecustform" layoutX="414.0" layoutY="368.0" onAction="#btnupdatecustformOnAction" prefHeight="25.0" prefWidth="126.0" text="ADD">
+         <font>
+            <Font name="Courier New Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="309.0" layoutY="324.0" prefHeight="25.0" prefWidth="47.0" text="code">
+         <font>
+            <Font name="Courier New Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

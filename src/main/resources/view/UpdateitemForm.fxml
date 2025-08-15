@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="451.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateitemFormController">
+   <children>
+      <Label layoutX="195.0" layoutY="16.0" prefHeight="39.0" prefWidth="231.0" text="Update Item">
+         <font>
+            <Font name="Courier New Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="77.0" prefHeight="39.0" prefWidth="321.0" text="Input itemcode you want to update">
+         <font>
+            <Font name="Courier New Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtupdateitemcode" layoutX="405.0" layoutY="79.0" prefHeight="35.0" prefWidth="125.0" />
+      <Label layoutX="54.0" layoutY="141.0" prefHeight="20.0" prefWidth="138.0" text="New Item Code">
+         <font>
+            <Font name="Courier New Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtnewitemcode" layoutX="229.0" layoutY="133.0" prefHeight="35.0" prefWidth="212.0" />
+      <Label layoutX="53.0" layoutY="199.0" prefHeight="20.0" prefWidth="155.0" text="New Description">
+         <font>
+            <Font name="Courier New Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtnewdescription" layoutX="229.0" layoutY="191.0" prefHeight="36.0" prefWidth="212.0" />
+      <Label layoutX="54.0" layoutY="255.0" prefHeight="20.0" prefWidth="138.0" text="New Pack Size">
+         <font>
+            <Font name="Courier New Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtnewpacksize" layoutX="229.0" layoutY="247.0" prefHeight="36.0" prefWidth="212.0" />
+      <Label layoutX="52.0" layoutY="317.0" prefHeight="20.0" prefWidth="147.0" text="New Unit Price">
+         <font>
+            <Font name="Courier New Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtnewunitprice" layoutX="229.0" layoutY="309.0" prefHeight="36.0" prefWidth="212.0" />
+      <Label layoutX="53.0" layoutY="371.0" prefHeight="20.0" prefWidth="155.0" text="New Qty on Hand">
+         <font>
+            <Font name="Courier New Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtnewqtyonhand" layoutX="229.0" layoutY="363.0" prefHeight="36.0" prefWidth="212.0" />
+      <JFXButton fx:id="btnupdateitem" layoutX="472.0" layoutY="369.0" onAction="#btnupdateitemOnAction" prefHeight="35.0" prefWidth="103.0" text="ADD">
+         <font>
+            <Font name="Courier New Bold" size="22.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="218.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeleteitemFormController">
+   <children>
+      <Label layoutX="214.0" layoutY="27.0" prefHeight="39.0" prefWidth="173.0" text="Delete Item">
+         <font>
+            <Font name="Courier New Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="99.0" prefHeight="39.0" prefWidth="389.0" text="Input itemcode of row you want to delete">
+         <font>
+            <Font name="Courier New Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="txtdeleteitemcode" layoutX="441.0" layoutY="101.0" prefHeight="35.0" prefWidth="128.0" />
+      <JFXButton fx:id="btndeleterow" layoutX="263.0" layoutY="157.0" onAction="#btndeleterowonAction" text="Delete">
+         <font>
+            <Font name="Courier New Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
